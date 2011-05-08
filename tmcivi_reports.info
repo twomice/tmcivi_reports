@@ -1,0 +1,7 @@
+name = tmcivi Report Modifications
+description = Add dynamic sorting and grouping to CiviCRM reports.
+version = 6.x-1.0-alpha
+dependencies[] = tmcivi
+package = tmcivi
+core = 6.x
+php = 5.2

@@ -1,0 +1,26 @@
+<?php
+/*
+ * $Id$
+ */
+
+
+/**
+ * Implementation of hook_tmcivi_template_dir
+ */
+function tmcivi_reports_tmcivi_template_dir() {
+    return realpath( dirname( __FILE__ ) ) . DIRECTORY_SEPARATOR . 'Smarty/templates';
+}
+
+/**
+ * Implementation of hook_tmcivi_plugins_dir
+ */
+function tmcivi_reports_tmcivi_plugins_dir() {
+    return realpath( dirname( __FILE__ ) ) . DIRECTORY_SEPARATOR . 'Smarty/plugins';
+}
+
+/**
+ * Implementation of hook_tmcivi_custom_php_dir
+ */
+function tmcivi_reports_tmcivi_class_dir() {
+    return realpath( dirname( __FILE__ ) ) . '/class';
+}
